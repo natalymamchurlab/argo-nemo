@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатория морских прогнозов - Валидация по глубинам</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Лаборатория морских прогнозов</h1>
+        <nav>
+            <a href="index.html">По датам</a>
+            <a href="depths.html">По глубинам</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="controls">
+            <div class="control-group">
+                <label for="depth-select">Выберите глубину (м):</label>
+                <select id="depth-select">
+                    <option value="">-- Выберите глубину --</option>
+                    <!-- Опции будут заполнены скриптом -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <div class="graph-container">
+            <h2>Температура на глубине <span id="current-depth"></span> м</h2>
+            <img id="depth-graph" src="" alt="График температуры по времени">
+            <div id="metadata"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 Лаборатория морских прогнозов</p>
+    </footer>
+    
+    <script src="js/map.js"></script>
+    <script src="js/depths.js"></script>
+</body>
+</html>

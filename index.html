@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатория морских прогнозов - Валидация по датам</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Лаборатория морских прогнозов</h1>
+        <nav>
+            <a href="index.html">По датам</a>
+            <a href="depths.html">По глубинам</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="controls">
+            <div class="control-group">
+                <label for="date-select">Выберите дату:</label>
+                <input type="date" id="date-select">
+            </div>
+            
+            <div class="control-group">
+                <label for="buoy-select">Выберите буй:</label>
+                <select id="buoy-select" disabled>
+                    <option value="">-- Сначала выберите дату --</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <div class="graph-container">
+            <h2>Профиль температуры</h2>
+            <img id="profile-graph" src="" alt="График профиля температуры">
+            <div id="metadata"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 Лаборатория морских прогнозов</p>
+    </footer>
+    
+    <script src="js/map.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
