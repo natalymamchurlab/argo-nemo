@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+select, input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.map-container {
+    height: 400px;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+}
+
+.graph-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+#profile-graph, #depth-graph {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+#metadata {
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
